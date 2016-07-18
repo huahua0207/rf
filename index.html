@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="fsvs demo">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>融峰官网</title>
+<link rel="stylesheet" href="./css/jquery.fullPage.css">
+<link rel="stylesheet" href="./css/demo.css">
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/iconfont.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.fullPage.js"></script>
+
+</head>
+<body>
+<!--导航开始-->
+   <div class="nav container-fluid" >
+
+   	   <div class="container1" >
+   	   	    <div class="logo">
+   	   	    	 <img src="./images/logo.png" class="img-responsive" alt="" />
+   	   	    </div> 
+   	   	    <div class="middle">
+   	   	    	     <ul>
+                      <li class="active"  data-menuanchor="page1" >
+                        <div class="line"></div>
+                        <a href="#" class="bor
+                        derTop">首页</a>
+
+                      </li> 
+                      <li data-menuanchor="page2" >
+                        <a href="#page2">业务</a>
+                        <div class="line"></div>
+                      </li> 
+                      <li data-menuanchor="page3" >
+                        <a href="#page3">技能</a>
+                        <div class="line"></div>
+                      </li> 
+                      <li data-menuanchor="page4" >
+                        <a href="#page4">特色</a>
+                        <div class="line"></div>
+                      </li> 
+                      <li data-menuanchor="page5" >
+                        <a href="#page5">团队</a>
+                        <div class="line"></div>
+                      </li>
+                      <li data-menuanchor="page6" >
+                        <a href="#page6">关于</a>
+                        <div class="line"></div>
+                      </li> 
+
+                      <li data-menuanchor="page7" >
+                        <a href="#page7" style="margin-right:0px">联系</a>
+                        <div class="line"></div>
+                      </li> 
+                   </ul>
+                     
+   	   	    	
+   	   	    </div> 
+             <div class="aa"></div>
+   	   	   
+   	   </div>
+        <div class="tell">
+                <a href="#">
+                  <i class="icon iconfont">&#xe604;</i>
+                 
+                  <span>0371-55897779</span>
+                </a>
+        </div>
+        <div class="nav-icon">
+             <i class="icon iconfont">&#xe60d;</i>
+        </div>
+   </div>
+<!--导航结束-->
+<div id="dowebok">
+  <div class="section">
+    <div class="slide slide1"></div>
+    <div class="slide slide2"></div>
+    <div class="slide slide3"></div>
+    <div class="slide slide4"></div>
+    <div class="banner-btn">
+        <ul>
+            <li class="btn-active"></li>
+            <li></li>
+            <li></li>
+            <li style="margin-right:0px"></li>
+        </ul>
+    </div>
+  </div>
+  <div class="section section2"></div>
+  <div class="section section3"></div>
+  <div class="section section4"></div>
+  <div class="section section5"></div>
+  <div class="section section6"></div>
+  <div class="section section7"></div>
+</div>
+<style>
+  .section1 { background: url(./images/banner01.png)  no-repeat;
+   background-size: cover;
+    background-position: center center;
+}
+.section2 { 
+  background: url(./images/bg01.png) ; 
+  background-size: cover;
+  background-position: center center;
+}
+.section3 { 
+  background: url(./images/bg02.png) ; 
+  background-size: cover;
+  background-position: center center;
+}
+.section4 {
+  background: url(./images/bg03.png) ;
+  background-size: cover;
+  background-position: center center;
+}
+.section5 { 
+  background: url(./images/team.png) #fff no-repeat;
+  background-position: center center;
+}
+.section6 { 
+  background: url(./images/bg04.png) ;
+   background-size: cover;
+   background-position: center center;
+  }
+.section7 { 
+  background: url(./images/bg05.png) ;
+   background-size: cover;
+   background-position: center center;
+  }
+#dowebok{
+    font-size: 0px;
+}
+.section{ 
+   height: 100%;
+   font-size: 0px;
+   float: left;
+  }
+  .section img{
+      display: block;
+     
+      height: 100%;
+  }
+ 
+  .slide1{
+       background: url(./images/banner01.png)  ;background-size:cover;
+  }
+  .slide2{
+       background: url(./images/banner02.png) ;background-size:cover;
+  }
+  .slide3{
+       background: url(./images/banner03.png) ;background-size: cover;
+  }
+  .slide4{
+       background: url(./images/banner04.png) ;background-size: cover;
+  }
+
+
+ 
+</style>
+<script>
+   
+   var flag=true;
+   $(".nav-icon i").click(function(){
+     if(flag){
+        $(".middle").css({"right":"0px","transition":"right .5s"});
+         flag=false;
+       
+     }else{
+          $(".middle").css({"right":"-75px"});
+          flag=true; 
+     }
+
+   })
+  
+</script>
+<script>
+   $('#dowebok').fullpage({
+    anchors: ['page1', 'page2', 'page3', 'page4',"page5","page6","page7"],
+    menu: '.middle'
+  });
+</script>
+</body>
+</html>
